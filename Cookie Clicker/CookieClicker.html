@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="CookieMechanics.js"></script>
+    <meta charset="utf-8">
+    <title>Cookie Clicker</title>
+  </head>
+  <body>
+    <h1>Click the Cookie to Collect!</h1>
+    <img src='https://vignette.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png/revision/latest/scale-to-width-down/340?cb=20130827014912' onclick=updateCookies() />
+    <p id='cookie'>Number of Cookies: 0</p>
+    <section>
+      <h2>Your Items</h2>
+      <ul>
+        <li id="cursor">Cursors: 0</li>
+        <li id="grandma">Grandmas: 0</li>
+        <li id="factory">Factories: 0</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Shop</h2>
+      <ul>
+        <li>Cursor: +1 cookie per second</li>
+        <button id="buyCursor" onclick=cursors.buy()>Price: 10 cookies</button>
+        <p id="unaffordCursor"></p>
+
+        <li>Grandma: +3 cookies per second</li>
+        <button id="buyGrandma" onclick=grandmas.buy()>Price: 25 cookies</button>
+        <p id="unaffordGrandma"></p>
+
+        <li>Factory: +5 cookies per second</li>
+        <button id="buyFactory" onclick=factories.buy()>Price: 40 cookies</button>
+        <p id="unaffordFactory"></p>
+      </ul>
+    </section>
+  </body>
+</html>
